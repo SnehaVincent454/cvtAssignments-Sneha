@@ -1,0 +1,486 @@
+/* Main containers */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom:auto;
+    font-size: 10px;
+    width:660px;
+
+    
+
+}
+
+
+
+html{
+    height:100%;
+
+}
+
+.containter{
+    position:relative;
+
+    margin-right: auto;
+    margin-top:40px;
+    width: fit-content;
+    height: auto;
+    display: grid;
+    grid-template-columns: 60px 600px ;
+    grid-template-rows: 45px 35px ;
+    grid-template-areas:
+    "   headingImage    headingText"
+    "   sT      sT   ";
+    
+}
+.sectionContainer{
+
+    height: auto;
+    display: block;
+    margin-bottom:auto;
+    grid-template-columns:80px repeat(2,95px) 47.5px 47.5px 47.5px 47.5px repeat(2,50px) 100px ;
+    grid-template-rows:repeat(2,20px) 15px 20px 15px 30px  20px 30px repeat(4,30px) 20px;
+    display:grid;
+    grid-row-gap: 5px;
+    grid-template-areas:
+    "   AI       AI       AI       AI       AI       AI     AI       AI         AI    AI     "
+    "   FN       INLN     INLN     INFrN       INFrN    INFrN        INFrN       INMI     DT       INDT     "
+    "   .       L       L       F       F       F       F       MI      .   .       "
+
+    "   AD       INST       INST       INC       INC     INC     .       INS    INZC   INZC       "
+    "   .       Code       Code       City       .       .       .       State     Zip   Zip     "
+    "   Phone       INP       INP       INP       INP       Email       INE       INE   INE  INE      "
+    "   dA      DA       DA       sS       sS       SS       SS       dS       DS       DS         "
+    "   pP       pP       PP       PP      PP       PP       PP       PP      PP       PP         "
+    "   lP       lP       LP       LP       LP       LP       LP       LP       LP       LP        "
+    "   CUS       CUS       CYES       CNO      US       US       US       US       USYES       USNO         "
+    "   WC      WC       WCYES       WCNO       when      when      When       When       When   When      "
+    "   felony       felony       fYES       fNO       .       .       .       .       .       .         "
+    "   explain       Explain       Explain       Explain       Explain      Explain     Explain       Explain      Explain     Explain         "
+    
+
+}
+label{
+    font-size: 10px;
+    font-family: arial;
+    
+}
+input{
+
+    border-bottom: 1px solid black;
+    border-top: 0px solid black;
+    border-left:0px solid black;
+    border-right:0px solid black;
+    width: auto;
+
+}
+
+/* Individual elements */
+/* Heaidng Cv-Tech */
+
+
+.subText{
+
+    border: 5px;
+    color:black;
+    font-size: 12px;
+    height: 25px;
+    grid-area:sT;
+
+}
+.headingImg{
+
+    border: 5px; 
+    grid-area:headingImage;
+}
+.headingText{
+    border: 5px; 
+    grid-area:headingText;
+}
+#ht{
+    text-align: right;
+    color: rgb(78, 78, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+
+
+
+/* Question */
+.headingSec{
+    text-align: center;
+    font-size: 10px;
+
+    margin-top: 1px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
+
+    #Heading1{    
+        grid-area:AI;    
+}
+#question1 {
+    color: rgb(0, 0, 0);
+    text-align:left;
+    grid-area:FN;
+
+}
+#question2{
+
+    grid-area:INLN;
+    width: 186px;
+}
+
+
+#question3{
+    width: 186px;
+
+    grid-area:INFrN;
+}
+
+#question4{
+    width: 45px;    
+
+    grid-area:INMI;
+}
+#question5{
+    text-align: center;
+    grid-area:DT;
+}
+
+#question6{
+
+    width: 95px;    
+
+    grid-area: INDT;
+
+}
+
+#questionLabel1{
+    
+    grid-area: L;
+
+}
+#questionLabel2{
+    grid-area: F;
+
+}
+#questionLabel3{
+    grid-area: MI;
+
+}
+
+
+
+/* Quesion Sec#2 Pt2 */
+.Address{
+    grid-area: AD;
+}
+
+#Street_Address{
+    width: 186px;    
+    grid-area: INST;
+}
+
+
+#City{
+    width: 186px;
+    grid-area:INC;
+}
+
+
+#State{
+    width: 46px;
+    grid-area: INS;
+}
+
+
+#Zip_Code{
+    width: 145px;   
+    grid-area: INZC;
+
+}
+#codeLabel{
+    grid-area: Code;
+
+}
+#cityLabel{
+    grid-area: City;
+
+}
+#stateLabel{
+    grid-area: State;
+
+}
+#zipLabel{
+    grid-area: Zip;
+
+}
+
+/* Quesion Sec#3 Pt2 */
+#phone{
+    grid-area: Phone;
+    margin-top: 10px;
+
+}
+#phoneInput{
+    grid-area: INP;
+
+}
+#email{
+    grid-area: Email;
+    text-align: end;
+}
+#emailInput{
+    grid-area: INE;
+
+}
+/* Quesion Sec#4 Pt2 */
+#datAvaliable{
+    grid-area: dA;
+    margin-top: 10px;
+
+}
+#DatAvaliable{
+    grid-area: DA;
+
+
+}
+#socialSecurity{
+    grid-area: sS;
+    margin-top: 10px;
+    font-size: 9px;
+}
+#SocialSecurity{
+    grid-area: SS;
+    font-size: 10px;
+}
+#desiredSalary{
+    grid-area: dS;
+    margin: 3px;
+}
+#DesiredSalary{
+    grid-area: DS;
+    font-size: 10px;
+}
+#learnPosition{
+    grid-area: lP;
+    margin-top: 20px;
+
+}
+#LearnPosition{
+    grid-area: LP;
+
+}
+#applyingPosition{
+
+    margin-top: 20px;
+    grid-area: pP;
+}
+#ApplyingPosition{
+
+    grid-area: PP;
+
+}
+#citizenUS{
+    grid-area: CUS;
+    margin-top: 20px;
+    
+
+}
+#citizenYES{
+    grid-area: CYES;
+    text-align: center;
+    margin: 5px;
+
+}
+
+#citizenNO{
+    grid-area: CNO;
+    text-align: center;
+    margin: 5px;
+}
+#US{
+    grid-area: US;
+    text-align: righleftt;
+    font-size: 9px;
+    margin-top: 20px;
+}
+#USYES{
+    grid-area: USYES;
+    text-align: center;
+    margin: 5px;
+
+}
+
+#USNO{
+    grid-area: USNO;
+    text-align: center;
+    margin: 5px;
+}
+#WorkedCompany{
+    grid-area: WC;
+    text-align: left;
+    font-size: 9px;
+    margin-top: 20px;
+}
+#CompanyYES{
+    grid-area: WCYES;
+    text-align: center;
+    margin: 5px;
+
+}
+
+#CompanyNO{
+    grid-area: WCNO;
+    text-align: center;
+    margin: 5px;
+}
+#when{
+    grid-area: when;
+    margin-top: 20px;
+    text-align: left;  
+    font-size: 9px;
+}
+#When{
+    grid-area: When;
+
+}
+#felony{
+    grid-area: felony;
+    text-align: left;
+    font-size: 9px;
+    margin-top: 20px;
+}
+#felonyYES{
+    grid-area: fYES;
+    text-align: center;
+    margin: 5px;
+
+}
+
+#felonyNO{
+    grid-area: fNO;
+    text-align: center;
+    margin: 5px;
+}
+#explain{
+    grid-area: explain;
+    margin-top: 15px;
+    text-align: left;  
+    font-size: 9px;
+}
+#Explain{
+    grid-area: Explain;
+
+}
+
+
+/* End of Individual */
+
+/* End of Individual */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.headingSub{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.QuestionSec1{
+    grid-column-start:  1;
+    grid-column-end:  3;
+    width: fit-content;
+}
+
+
+.Input1{
+    width: 100px;
+}
+
+.label1{
+background-color: antiquewhite;
+}
+
+.headingSec1{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 25px;
+    grid-template-columns:660px;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+
+}
+
+.containter_1{
+    display: grid;
+    background-color: rgb(187, 187, 187);
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+
+    grid-template-columns:repeat(6,110px);
+    
+    /* 110px 110px 110px 110px 110px 110px; 
+}
+/* .whole_body{
+    background-color: azure;
+    padding: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.ht{
+    text-align: right;
+    color: rgb(83, 83, 83);
+    padding: 10px;
+    
+}
+
+
+.header_img{
+    margin-left: 0px;
+    margin-top: -4.5em;
+
+    float: left;
+
+}
+*/

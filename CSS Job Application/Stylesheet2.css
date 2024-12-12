@@ -1,0 +1,788 @@
+body{
+    width: 660px;
+    margin-left:auto;
+    margin-right:auto;
+    min-width: min-content;
+
+}
+
+p{
+    margin:0px;
+}
+div{
+    display:block;
+}
+
+
+.Section2Container{
+    position:relative;
+    min-width: min-content;
+    margin-top:380px;
+    margin-left:-80px;
+    margin-right: auto;
+    display:block;
+    display:grid;
+    grid-template-columns:660px;
+
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas: 
+    "  ED    "
+    "  Sec1   "
+    "  Sec2   "
+    "  Sec3   "
+    "  Sec4   "
+    "  Sec5   "
+    "  Sec6   ";
+}
+
+.EducationHeading{
+    grid-area:ED;
+
+
+}
+
+.headingSec2{   
+    background-color: rgb(77, 77, 77);
+    text-align: center;
+    font-size: 14px;
+    color: white;
+
+}
+.QuestionSec2{
+    display:grid;
+    grid-template-columns: 80px 115px 115px  50PX  115px 115px;
+    grid-template-rows: 30px;
+    grid-area:Sec1;
+    grid-template-areas:
+    "   HSL       HSI       HSI       ADL       ADI       ADI       ADI   ";
+
+}
+.labelQ1{
+grid-area: HSL;
+text-align:left;
+font-size:10px;
+margin-top:20px;
+}
+
+.inputQ1{
+grid-area: HSI;
+width:225px;
+height:15px;
+margin-top:10px;
+}
+
+.labelQ2{
+grid-area: ADL;
+margin-top: 20px;
+font-size: 12px;
+text-align:right
+
+}
+.inputQ2{
+min-width: auto;
+grid-area: ADI;
+height: 20px;
+margin-top: 5px;
+}
+
+
+.QuestionSec3{
+    display:grid;
+    grid-template-columns: 50px 100px 25px 100px 100px 50px 50px  50px 135px;
+    grid-template-areas:
+    "   From       INFrom       TO       INTO       GQ      INGYES1        INGNO2       diploma       INdiploma       .       .   ";
+    grid-template-rows:40px;
+    grid-area:Sec2;
+}
+
+.labelQ3{
+    grid-area:From;
+    height:10px;
+    vertical-align:bottoms;
+    margin-top:30px;
+}
+.inputQ3{
+    grid-area:INFrom;
+}
+.labelQ4{
+    grid-area:TO;
+    margin-top:30px;
+    text-align:end;
+}
+.inputQ4{
+    grid-area:INTO;
+}
+.labelQ5{
+    grid-area:GQ;
+    margin-top:20px;
+    text-align:end;
+
+}
+.inputQ5PT1{
+    grid-area:INGYES1;
+    padding-left: 15px;
+    padding-top:10px;
+}
+.inputQ5PT2{
+    grid-area:INGNO2;
+    padding-left: 15px;
+    padding-top:10px;
+}
+.labelQ6{
+    grid-area:diploma;
+    margin-top:25px;
+}
+.inputQ6{
+    grid-area:INdiploma;
+    margin-top:25px;
+
+}
+.QuestionSec4{
+    display:grid;
+    grid-template-columns:50px 115px 115px  50PX  115px 215px;
+    grid-template-areas:
+    "   College       INCollege       INCollege       OneAddress       INOneAddress       INOneAddress   ";
+    grid-template-rows:35px;
+    grid-area:Sec3;
+}
+
+.labelQ7{
+    grid-area:College;
+    margin-top:20px;
+
+}
+.inputQ7{
+    grid-area:INCollege;
+    margin-top:5px;
+
+}
+.labelQ8{
+    grid-area:OneAddress;
+    margin-top:20px;
+    text-align:end;
+
+}
+.inputQ8{
+    grid-area:INOneAddress;
+    margin-top:5px;
+
+}
+.QuestionSec5{
+    display:grid;
+    grid-template-columns: 50px 100px 25px 100px 100px 50px 50px  50px 135px;
+    grid-template-areas:
+    "   OFrom       INOFrom       OTO       INOTO       OGQ      INOGYES1        INOGNO2       degree       INdegree   ";
+    grid-template-rows:40px;
+    grid-area:Sec4;
+}
+
+.labelQ9{
+    grid-area:OFrom;
+    height:10px;
+    margin-top:30px;
+}
+.inputQ9{
+    grid-area:INOFrom;
+}
+.labelQ10{
+    grid-area:OTO;
+    margin-top:30px;
+    text-align:end;
+}
+.inputQ10{
+    grid-area:INOTO;
+}
+.labelQ11{
+    grid-area:OGQ;
+    margin-top:25px;
+    text-align:end;
+
+}
+.inputQ11PT1{
+    grid-area:INOGYES1;
+    padding-left: 15px;
+    padding-top:10px;
+}
+.inputQ11PT2{
+    grid-area:INOGNO2;
+    padding-left: 15px;
+    padding-top:10px;
+}
+.labelQ12{
+    grid-area:degree;
+    margin-top:25px;
+}
+.inputQ12{
+    grid-area:INdegree;
+    margin-top:25px;
+
+}
+
+.QuestionSec6{
+    display:grid;
+    grid-template-columns:50px 115px 115px  50PX  115px 215px;
+    grid-template-areas:
+    "   Other       INOther       INOther       TwoAddress       INTwoAddress       INTwoAddress   ";
+    grid-template-rows:35px;
+    grid-area:Sec5;
+}
+
+.labelQ13{
+    grid-area:Other;
+    margin-top:20px;
+
+}
+.inputQ13{
+    grid-area:INOther;
+    margin-top:30px;
+
+}
+.labelQ14{
+    grid-area:TwoAddress;
+    margin-top:20px;
+    text-align:end;
+
+}
+.inputQ14{
+    grid-area:INTwoAddress;
+    margin-top:20px;
+
+}
+
+.QuestionSec7{
+    display:grid;
+    grid-template-columns: 50px 100px 25px 100px 100px 50px 50px  50px 135px;
+    grid-template-areas:
+    "   TFrom       INTFrom       TTO       INTTO       TGQ      INTGYES1        INTGNO2       TDegree       INTDegree   ";
+    grid-template-rows:40px;
+    grid-area:Sec6;
+}
+
+.labelQ15{
+    grid-area:TFrom;
+    height:10px;
+    margin-top:30px;
+}
+.inputQ15{
+    grid-area:INTFrom;
+}
+.labelQ16{
+    grid-area:TTO;
+    margin-top:30px;
+    text-align:end;
+}
+.inputQ16{
+    grid-area:INTTO;
+}
+.labelQ17{
+    grid-area:TGQ;
+    margin-top:25px;
+    text-align:end;
+
+}
+.inputQ17PT1{
+    grid-area:INTGYES1;
+    padding-left: 15px;
+    padding-top:10px;
+}
+.inputQ17PT2{
+    grid-area:INTGNO2;
+    padding-left: 15px;
+    padding-top:10px;
+}
+.labelQ18{
+    grid-area:TDegree;
+    margin-top:25px;
+}
+.inputQ18{
+    grid-area:INTDegree;
+    margin-top:25px;
+
+}
+
+
+
+
+
+
+
+.Section3Container{
+    position:relative;
+
+display:grid;
+min-width:min-content;
+margin-top: 650px;
+margin-left: -180px;
+margin-right: auto;
+width:660px;
+grid-template-columns:660px;
+grid-template-rows:1fr;
+grid-template-areas:
+"   HS  "
+"   QS1   "
+"   QS2   "
+"   QS3   ";
+}
+
+.ReferencesHeading{
+    display:grid;
+    grid-template-columns: 660px;
+    grid-template-rows:15px 20px;
+    grid-template-areas: 
+    "   RH   "
+    "   OST   ";
+    grid-area:HS;
+}
+.headingSec3{
+    grid-area:RH;
+    background-color:rgb(77, 77, 77);
+    color:white;
+    font-size:13px;
+    margin:0px;
+    text-align: center;
+    
+}
+.subText1{
+    grid-area:OST;
+    font-style:italic;
+    font-size:12px;
+}
+.QS1PT1{
+    display:grid;
+    grid-template-columns: 60px 340px 80px 180px;
+    grid-template-rows: 20px 30px 30px 20px;
+    grid-template-areas: 
+    "   LQ1       INLQ1       LQ2       INLQ2   "
+    "   LQ3       INLQ3       LQ4       INLQ4   "
+    "   LQ5       INLQ5       INLQ5       INLQ5   "
+    "   BC       BC       BC       BC   ";
+    grid-area: QS1;
+}
+.QS1PT2{
+    display:grid;
+    grid-template-columns: 60px 340px 80px 180px;
+    grid-template-rows: 20px 30px 30px 20px;
+    grid-template-areas: 
+    "   LQ1       INLQ1       LQ2       INLQ2   "
+    "   LQ3       INLQ3       LQ4       INLQ4   "
+    "   LQ5       INLQ5       INLQ5       INLQ5   "
+    "   BC       BC       BC       BC   ";
+    grid-area: QS1;
+}
+.QS1PT3{
+    display:grid;
+    grid-template-columns: 60px 340px 80px 180px;
+    grid-template-rows: 20px 30px 30px 20px;
+    grid-template-areas: 
+    "   LQ1       INLQ1       LQ2       INLQ2   "
+    "   LQ3       INLQ3       LQ4       INLQ4   "
+    "   LQ5       INLQ5       INLQ5       INLQ5   "
+    "   BC       BC       BC       BC   ";
+    grid-area: QS1;
+}
+.LQ1{
+    grid-area:LQ1;
+    margin-top:10px;
+}
+.INLQ1{
+    grid-area:INLQ1;
+}
+.LQ2{
+    grid-area:LQ2;
+    margin-top:20px;
+    text-align:end;
+}
+.INLQ2{
+    grid-area:INLQ2;
+}
+.LQ3{
+    grid-area:LQ3;
+    margin-top:20px;
+}
+.INLQ3{
+    grid-area:INLQ3;
+}
+.LQ4{
+    grid-area:LQ4;
+    margin-top:20px;
+    text-align:end;
+}
+.INLQ4{
+    grid-area:INLQ4;
+}
+.LQ5{
+    grid-area:LQ5;
+    margin-top:20px;
+}
+.INLQ5{
+    grid-area:INLQ5;
+}
+.break{
+    background-color:rgb(235, 235, 235);
+    grid-area: BC;
+    overflow:hidden;
+    margin-top:10px;
+    height:10px;
+
+}
+hr{
+    color:rgb(22, 22, 22);
+    overflow:hidden;
+    width:660px;
+    margin-top:0px;
+    margin-bottom: 5px;
+    grid-area:HR
+}
+
+
+
+
+
+
+
+
+
+.Section4Container{
+    position:relative;
+
+    display:grid;
+    margin-top:980px;
+    margin-left:-275px;
+    grid-template-rows:repeat(3, 199px);
+    grid-template-columns:660px;
+    grid-template-areas:
+    "   Sec1   "
+    "   Sec2   "
+    "   Sec3   ";
+}
+
+
+.Section1{
+    grid-area:Sec1;
+    display:grid;
+    grid-template-rows: 15px repeat(6, 1fr);
+    grid-template-columns: 660px;
+    grid-template-areas:
+    "   Divide   "
+    "   one   "
+    "   Two   "
+    "   Three   "
+    "   Four   "
+    "   Five   "
+    "   Six   ";
+}
+.Section2{
+    grid-area:Sec2;
+    display:grid;
+    grid-template-rows: 20px repeat(6, 1fr);
+    grid-template-columns: 660px;
+    grid-template-areas:
+    "   Divide   "
+    "   one   "
+    "   Two   "
+    "   Three   "
+    "   Four   "
+    "   Five   "
+    "   Six   ";
+}
+.Section3{
+    grid-area:Sec3;
+    display:grid;
+    grid-template-rows: 20px repeat(6, 1fr);
+    grid-template-columns: 660px;
+    grid-template-areas:
+    "   Divide   "
+    "   one   "
+    "   Two   "
+    "   Three   "
+    "   Four   "
+    "   Five   "
+    "   Six   ";
+}
+
+.PreviousEmploymentHD{
+    grid-area: Divide;
+    margin:0px;
+}
+.headingSec4{
+    color:white;
+    background-color:rgb(77, 77, 77);
+    font-size:13px;
+    text-align:center;
+    margin:0px;
+}
+.questione{
+    display:grid;
+    width:660px;
+    grid-template-columns:60px 400px 60px 138px;
+    grid-template-areas:
+    "   CLB       CIN       PLB       PIN   ";
+    grid-area:one;
+}
+.companyLB{
+    margin-top:10px;
+    text-align:left;
+}
+.companyIN{
+}
+.phoneLB{
+    text-align: end;
+    margin-top:10px;
+}
+.phoneIN{
+}
+
+
+
+.questionTwo{
+    display:grid;
+    grid-template-columns:60px 400px 60px 138px;
+    grid-area: Two;
+}
+.addressLB{
+    margin-top:10px;
+}
+.supervisorLB{
+    margin-top:10px;
+    text-align:end;
+}
+
+
+.questionThree{
+    display:grid;
+    grid-template-columns: 60px 200px 100px 100px 100px 100px;
+    grid-template-areas:
+    "   .       .       .       .       .       .   ";
+    grid-area:Three;
+}
+.JobTitleLB{
+    margin-top:10px;
+}
+.StartingSalaryLB{
+    margin-top:10px;
+    text-align:end;
+}
+.StartingSalaryIN{
+    font-size:10px;
+    height:10px;
+    margin-top:10px;
+}
+.EndingSalaryLB{
+    margin-top:10px;
+    text-align:end;
+}
+.EndingSalaryIN{
+    font-size:10px;
+    height:10px;
+    margin-top:10px;
+}
+
+
+
+.questionFour{
+    display:grid;
+    grid-template-columns: 80px 580px;
+    grid-area:Four;
+}
+
+.responsibilityLB{
+    margin-top:10px;
+}
+
+
+.questionFive{
+    display:grid;
+    grid-template-columns: 60px 100px 30px 100px 125px 245px;
+    grid-area:Five;
+}
+.FromLB{
+    margin-top:10px;
+}
+.toLB{
+    margin-top:10px;
+    text-align:end;
+}
+.RFLLB{
+    margin-top:10px;
+    text-align:end;
+}
+
+
+
+.questionSix{
+    display:grid;
+    grid-template-columns: 300px repeat(7,1fr);
+    margin-top:10px;
+    margin-bottom:10px;
+    grid-area: Six;
+}
+.ContactReferenceLB{
+    margin-top:10px;
+}
+.Yes1{
+    text-align:center;
+}
+.No1{
+    text-align:center;
+}
+.HL1PT1{
+    margin-top:0px;
+    margin-bottom:05px;
+    color:darkgrey;
+
+    background-color: rgb(180, 180, 180);
+}
+.HL1PT2{
+    margin-top:7px;
+    margin-bottom:0px;
+
+    color:darkgrey;
+}
+.Divider1{
+    background-color:rgb(228, 228, 228);
+    height:10px;
+    grid-area:Divide;
+}
+
+.Section5Container{
+    position:relative;
+
+    margin-top:1570px;
+    margin-left:-330px;
+    display:grid;
+    grid-template-columns:660px;
+    grid-template-rows:repeat(2,1fr);
+    grid-template-areas:
+    "   SandA1   "
+    "   SandA2   ";
+}
+.SandA1{
+    display:grid;
+    grid-template-rows: 1fr (3,40px);
+    grid-template-areas:
+    "   Head   "
+    "   questionPT1   ";
+    grid-area:SandA1;
+}
+.headingText1{
+    display:grid;
+    grid-template-columns: 660px;
+    grid-area:Head;
+}
+.Heading2{ 
+    background-color:rgb(68, 68, 68);
+    color:white;
+    font-size:13px;
+    text-align:center;
+
+
+}
+.questionPT1{
+    margin-top:-10px;
+    display:grid;
+    grid-template-columns:230px 430px;
+    grid-template-rows:repeat(3,30px);
+    grid-template-areas: 
+    "   question       questionAn   "
+    "   questionAn2       questionAn2   "
+    "   questionAn3       questionAn3  ";
+    grid-area:questionPT1;
+}
+.SkillsAbilitiesLB{
+    grid-area:question;
+    margin-top:18px;
+}
+.SkillsAbilitiesIN1{
+    grid-area:questionAn;
+    
+}
+.SkillsAbilitiesIN2{
+    grid-area:questionAn2;
+    
+}
+.SkillsAbilitiesIN3{
+    grid-area:questionAn3;
+    
+}
+
+
+.SandA2{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: 250px 410px;
+    grid-template-rows: 20px 30px;
+    grid-template-areas: 
+    "   Lb      In1   "
+    "   In2     In2   ";
+}
+.InterestLB{
+    margin-top:7px;
+    grid-area:Lb;
+}
+.InterestIN1{
+    margin-top:7px;
+    grid-area:In1;
+}
+.InterestIN2{
+    margin-top:7px;
+    grid-area:In2;
+}
+
+
+
+
+.Section6Container{
+    position:relative;
+    margin-left:-375px;
+    margin-top:1770px;
+    display:grid;
+    grid-template-columns:660px;
+    grid-template-rows:repeat(4, 1fr);
+    grid-template-areas: 
+    "   head   "
+    "   SignatureP1   "
+    "   SignatureP2   "
+    "   FinalQ1   ";
+    row-gap: 10px;
+}
+.Heading3{
+    grid-area:head;
+}
+.Head1{
+    margin:0px;
+    background-color:rgb(49, 49, 49);
+    color:white;
+    text-align:center;
+    font-size:13px;
+}
+.SignatureP1{
+    grid-area:SignatureP1;
+    font-style:italic;
+    font-size:14px;
+}
+.SignatureP2{
+    grid-area:SignatureP2;
+    font-style:italic;
+    font-size:14px;
+}
+.FinalQ1{
+    display:grid;
+    grid-template-columns:60px 410px 40px 150px;
+    grid-area:FinalQ1;
+}
+.SignatureLB{
+    margin-top:10px;
+}
+.Date1{
+    margin-top:10px;
+    text-align:end;
+}
+
+
+.submit{
+    background-color:rgb(196, 196, 196);
+    border-radius: 10px;
+    border:none;
+    cursor:pointer;
+    margin-bottom:20px;
+}
