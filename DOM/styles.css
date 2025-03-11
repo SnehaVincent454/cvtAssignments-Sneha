@@ -1,0 +1,74 @@
+body{
+    font-family:arial;
+    margin:0px;
+}
+
+header{
+    background-color: rgb(72, 134, 72);
+    padding:3px;
+}
+ h1{
+    font-weight:bold;
+    color:white;
+    margin-left:10%;
+    font-family:arial;
+
+}    
+
+.field{
+    margin:2% 10%;
+    padding: 3% ;
+    border-width:1px;
+    border-color:gray;
+    border-style:solid;
+    border-radius:3px;
+
+}
+form{
+    margin-top:1%;
+}
+label{
+    color:rgb(0, 0, 0);
+    font-size:25px;
+    font-family:arial;
+    font-weight:bold;
+}
+
+input{
+    padding:5px;
+    border-width: 1px;
+    border-color:gray;
+    box-shadow: none;
+}
+.button{
+    background-color:rgb(56, 56, 63);
+    color:white;
+    font-family:arial;
+    border:none;
+    padding:7px 9px;
+    font-size:10px;
+    border-radius: 3px;
+}
+#button{
+    background-color: rgb(56, 56, 63);
+    color:white;
+    width: 100%;
+    border:solid black 1px;
+    border-radius: 4px;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:20px 0px 0px 0px ;
+}
+ul{
+    padding-left:0px;
+    margin-bottom:0;
+}
+
+li{
+    border-width:1px 1px 1px 1px;
+    border-style:solid;
+    border-color:gray;
+    padding:20px 10px 20px 10px;
+    list-style: none;;
+}

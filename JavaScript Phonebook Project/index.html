@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <h1 id="formTitle">FORM</h1>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input name="firstName" id="FN" type=" text"/>
+            <label for="lastName">last Name:</label>
+            <input name="lastName" id="LN" type=" text"/>
+            <label for="phoneNumber">Phone Number:</label>
+            <input name="phoneNumber" id="PN" type="tel"/>
+            <button id="add">add</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th  id="first">First Name:</th>
+                    <th>Last Name:</th>
+                    <th>Phone Number:</th>
+                </tr>
+            </thead> 
+            <tbody id="details">
+
+            </tbody>
+        </table>
+        <script >
+            
+  let firstName = document.getElementById("FN").value;
+  let lastName = document.getElementById("LN").value;
+  let phoneNumber = document.getElementById("PN");
+  let add = document.getElementById('add');
+  let detail = document.getElementById('details')
+
+
+  function rows(){
+    detail.innerHTML = `
+        <tr>
+            <td>${firstName}</td>
+            <td>${lastName}</td>
+            <td>${phoneNumber}</td>
+        </tr>
+
+  `;
+  }
+  add.addEventListener('click',rows);
+        </script>
+    </body>
+</html>

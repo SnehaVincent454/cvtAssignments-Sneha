@@ -1,0 +1,26 @@
+body{
+	background-color: #ad0a02;
+	color: #d1d1d1;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1em;
+}
+.mainHeading{
+	font-family: Helvetica, Arial, Tahoma, sans-serif;
+	font-size:4em;
+	color:#000000
+	text-algin:center;
+
+}
+.paragraphHeadings{
+	font-weight:bold;
+	font-size:14px;
+	color:white;
+}
+.centerImage{
+	display:block;
+	margin:auto;
+	width:80%
+}
+a{
+	color:white;
+}
